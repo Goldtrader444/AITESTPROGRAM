@@ -1,0 +1,6 @@
+gh codespace ssh -c bug-free-umbrella-jr4r9prgjp97fp5rp -- -L 3000:127.0.0.1:3000 'cd /workspaces/AISite && (pgrep -f "node dist/server.cjs" >/dev/null || nohup npm start >/tmp/aisite-production.log 2>&1 &) && sleep 3 && echo "LOCALHOST TUNNEL READY: http://localhost:3000/" && exec sleep infinity'
+
+
+
+
+
